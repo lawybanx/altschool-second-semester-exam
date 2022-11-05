@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { useParams } from 'react-router-dom';
 import { fetchRepoDetails } from '../../utils/fetchRepo';
 import Spinner from '../layouts/Spinner';
@@ -17,6 +18,11 @@ const RepoDetails = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Repo Details</title>
+        <meta name='description' content='Github repositories details page ' />
+        <link rel='canonical' href='/repo_details' />
+      </Helmet>
       {isLoading ? (
         <Spinner />
       ) : (

@@ -1,8 +1,17 @@
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 
 const Landing = () => {
   return (
     <>
+      <Helmet>
+        <title>Landing Page</title>
+        <meta
+          name='description'
+          content='View and search for your Github repositories and users'
+        />
+        <link rel="canonical" href="/" />
+      </Helmet>
       <section className='landing'>
         <div className='dark-overlay'>
           <div className='landing-inner'>

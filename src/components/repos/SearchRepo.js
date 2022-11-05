@@ -2,6 +2,7 @@ import { useState } from 'react';
 import RepoPaginate from './RepoPaginate';
 import { fetchRepo } from '../../utils/fetchRepo';
 import Spinner from '../layouts/Spinner';
+import { Helmet } from 'react-helmet-async';
 
 const SearchRepo = () => {
   const [repos, setRepos] = useState([]);
@@ -19,6 +20,14 @@ const SearchRepo = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Search Repo</title>
+        <meta
+          name='description'
+          content='Search for your Github repositories and users'
+        />
+        <link rel='canonical' href='/search' />
+      </Helmet>
       <form onSubmit={handleSubmit} className='container'>
         <h2>Enter a valid username</h2>
         <input
