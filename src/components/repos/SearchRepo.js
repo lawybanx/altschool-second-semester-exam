@@ -39,6 +39,9 @@ const SearchRepo = () => {
         <button className='btn btn-dark m-1 ' type='submit'>
           Search
         </button>
+        <p className='error-boundary'>
+          leave input field empty to test error boundary
+        </p>
       </form>
       {isLoading ? <Spinner /> : <RepoPaginate repos={repos} />}
     </>

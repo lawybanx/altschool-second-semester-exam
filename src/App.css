@@ -463,3 +463,8 @@ img {
     width: 100%;
   }
 }
+
+.error-boundary {
+  font-size: 15px;
+  color: var(--danger-color);
+}
