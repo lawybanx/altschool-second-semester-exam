@@ -9,7 +9,7 @@ const NotFound = () => {
           name='description'
           content='Page not Found'
         />
-        <link rel='canonical' href='*' />
+        <link rel='canonical' href='/*' />
       </Helmet>
       <section className='container'>
         <h1 className='x-large text-primary'>

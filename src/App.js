@@ -23,7 +23,7 @@ const App = () => {
           <Route path='search' element={<SearchRepo />}>
             <Route path=':username' element={<RepoPaginate />} />
           </Route>
-          <Route path='*' element={<NotFound />} />
+          <Route path='/*' element={<NotFound />} />
         </Routes>
       </Router>
     </ErrorBoundary>
