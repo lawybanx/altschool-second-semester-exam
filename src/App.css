@@ -462,6 +462,10 @@ img {
     flex: 0 0 auto;
     width: 100%;
   }
+
+  .pagination li {
+    padding: 0.5rem;
+  }
 }
 
 .error-boundary {
