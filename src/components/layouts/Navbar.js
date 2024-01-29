@@ -17,7 +17,7 @@ const Navbar = () => {
           Github
         </a>
         <a
-          href='https://altschool.muhammadawwalba.repl.co'
+          href='https://portfolio-lawybanx.vercel.app/'
           target='_blank'
           rel='noopener noreferrer'
         >
